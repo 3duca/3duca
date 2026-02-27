@@ -1,0 +1,68 @@
+[
+  {
+    "id": 1,
+    "name": "María García",
+    "age": 10,
+    "program": "Exploradores Tecnológicos",
+    "photo": "images/testimonials/maria.jpg",
+    "rating": 5,
+    "text": "¡Me encanta programar robots! He aprendido Python y ahora puedo hacer que mi robot EV3 haga lo que yo quiera. Mis profes son súper divertidos.",
+    "date": "2026-01-15",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "name": "Carlos Martínez",
+    "age": 14,
+    "program": "Programadores y Makers",
+    "photo": "images/testimonials/carlos.jpg",
+    "rating": 5,
+    "text": "Construí mi propia estación meteorológica con Arduino y ahora puedo ver la temperatura y humedad en mi móvil. ¡Es increíble lo que se puede hacer!",
+    "date": "2026-01-20",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "name": "Lucía Fernández",
+    "age": 7,
+    "program": "Pequeños Inventores",
+    "photo": "images/testimonials/lucia.jpg",
+    "rating": 5,
+    "text": "Hice un cuento con Scratch Jr donde un robot salva a una princesa. ¡Y también programé a Bee-Bot para que hiciera un laberinto!",
+    "date": "2025-12-10",
+    "featured": false
+  },
+  {
+    "id": 4,
+    "name": "Pablo Rodríguez",
+    "age": 16,
+    "program": "Ingenieros Junior",
+    "photo": "images/testimonials/pablo.jpg",
+    "rating": 5,
+    "text": "Estoy aprendiendo ROS2 y Deep Learning. Es el mismo software que usan ingenieros profesionales. Me está ayudando mucho para mis estudios de ingeniería.",
+    "date": "2026-02-01",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "name": "Ana López",
+    "age": 12,
+    "program": "Programadores y Makers",
+    "photo": "images/testimonials/ana.jpg",
+    "rating": 5,
+    "text": "He diseñado y impreso en 3D mi propia carcasa para Arduino. También estoy aprendiendo Machine Learning para hacer un clasificador de imágenes.",
+    "date": "2026-01-25",
+    "featured": false
+  },
+  {
+    "id": 6,
+    "name": "Jorge Sánchez",
+    "age": 9,
+    "program": "Exploradores Tecnológicos",
+    "photo": "images/testimonials/jorge.jpg",
+    "rating": 5,
+    "text": "Mi robot puede esquivar obstáculos usando sensores. ¡Es como magia! Y además he hecho un videojuego en Python.",
+    "date": "2025-12-15",
+    "featured": false
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "question": "¿Qué edad debe tener mi hijo/a para inscribirse?",
+    "answer": "Ofrecemos programas para niños y jóvenes de 6 a 17 años, organizados en 4 grupos por edades: 6-8, 9-11, 12-14 y 15-17 años. Cada programa está diseñado específicamente para el nivel de desarrollo cognitivo de cada rango.",
+    "category": "inscripcion",
+    "order": 1
+  },
+  {
+    "id": 2,
+    "question": "¿Necesita mi hijo/a experiencia previa?",
+    "answer": "¡No! Nuestros programas empiezan desde cero. Diseñamos las clases para que tanto principiantes absolutos como estudiantes con experiencia puedan aprender y disfrutar.",
+    "category": "inscripcion",
+    "order": 2
+  },
+  {
+    "id": 3,
+    "question": "¿Cuántos alumnos hay por clase?",
+    "answer": "Mantenemos grupos reducidos de máximo 8 alumnos (6 en el programa de Ingenieros Junior) para garantizar atención personalizada y un aprendizaje efectivo.",
+    "category": "metodologia",
+    "order": 3
+  },
+  {
+    "id": 4,
+    "question": "¿Qué materiales necesita mi hijo/a?",
+    "answer": "Todo el material está incluido: robots, ordenadores, kits de Arduino, impresoras 3D, etc. Los estudiantes solo necesitan traer ganas de aprender y crear.",
+    "category": "materiales",
+    "order": 4
+  },
+  {
+    "id": 5,
+    "question": "¿Hay clases de prueba gratuitas?",
+    "answer": "¡Sí! Ofrecemos una clase de prueba gratuita y sin compromiso para que tu hijo/a pueda conocer a los profesores, ver las instalaciones y probar las actividades antes de inscribirse.",
+    "category": "inscripcion",
+    "order": 5
+  },
+  {
+    "id": 6,
+    "question": "¿Cuáles son los horarios disponibles?",
+    "answer": "Tenemos clases de lunes a viernes por las tardes (16:00-20:30) y sábados por la mañana (10:00-14:00). Los horarios específicos varían según el programa y grupo de edad.",
+    "category": "horarios",
+    "order": 6
+  },
+  {
+    "id": 7,
+    "question": "¿Ofrecen certificados?",
+    "answer": "Sí, al finalizar cada nivel los estudiantes reciben un certificado oficial que acredita las competencias adquiridas en robótica, programación e IA.",
+    "category": "certificacion",
+    "order": 7
+  },
+  {
+    "id": 8,
+    "question": "¿Qué pasa si mi hijo/a falta a una clase?",
+    "answer": "Pueden recuperar la clase en otro grupo del mismo nivel. Además, proporcionamos material online y vídeos explicativos para que no se pierdan ningún contenido.",
+    "category": "metodologia",
+    "order": 8
+  },
+  {
+    "id": 9,
+    "question": "¿Participan en competiciones?",
+    "answer": "¡Absolutamente! Preparamos a nuestros estudiantes para participar en competiciones nacionales e internacionales como First LEGO League, Arduino Day y hackathons juveniles.",
+    "category": "actividades",
+    "order": 9
+  },
+  {
+    "id": 10,
+    "question": "¿Cuál es el precio y qué incluye?",
+    "answer": "Los precios van desde 70€/mes para los más pequeños hasta 100€/mes para los mayores. Incluye todo el material, uso de equipos, certificado al finalizar y acceso a plataforma online con recursos adicionales.",
+    "category": "precios",
+    "order": 10
+  }
+]

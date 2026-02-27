@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pequeños Inventores (6-8 años) - Academia IA y Robótica</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/3duca-styles.css">
+    <link rel="stylesheet" href="../css/educacion-mejorado.css">
+</head>
+<body>
+    <!-- Navegación Fija Superior -->
+    <header class="navbar-fixed">
+        <div class="container-nav">
+            <div class="logo-section">
+                <img src="../images/mascota.png" alt="Friendly robot mascot wearing graduation cap and headphones, smiling with big blue eyes, representing the academy's focus on robotics and artificial intelligence education" class="mascota-img" style="height: 50px; width: auto;">
+                <span class="logo-text"> Academia Robótica e IA</span>
+            </div>
+            <nav class="main-nav">
+                <a href="../index.html#programas-robotica" class="nav-link">Programas</a>
+                <a href="../index.html#valor" class="nav-link">¿Por qué elegirnos?</a>
+                <a href="../index.html#horarios" class="nav-link">Horarios y Precios</a>
+                <a href="../index.html#inscripciones" class="nav-link">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="../index.html#inscripciones" class="btn-inscripcion"> Inscripciones</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Menú">☰</button>
+        </div>
+    </header>
+
+    <main class="contenido-educativo">
+        <div class="video-background">
+            <video autoplay muted loop playsinline id="myVideo">
+                <source src="../videos/Age-of-Beyond.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay"></div>
+        </div>
+        
+        <div class="breadcrumb">
+            <a href="../educacion.html">Academia</a> > <span>Pequeños Inventores (6-8 años)</span>
+        </div>
+
+        <article class="lesson programa-page">
+            <!-- Hero del Programa -->
+            <div class="programa-hero">
+                <div class="hero-badge">🧸 Programa Iniciación</div>
+                <div class="programa-hero-content">
+                <div class="programa-icon-large">🧸</div>
+                <span class="edad-badge-large">6-8 años • Nivel Iniciación</span>
+                <h1 class="programa-title">Pequeños Inventores</h1>
+                <p class="programa-descripcion-destacada">
+                    <strong>¡La aventura comienza aquí!</strong> Descubre la magia de crear videojuegos y robots. 
+                    Aprende jugando, sin necesidad de saber leer código.
+                </p>
+                <div class="programa-stats">
+                    <div class="stat-item">
+                        <span class="stat-icon">⏰</span>
+                        <span class="stat-value">30</span>
+                        <span class="stat-label">Semanas</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">👥</span>
+                        <span class="stat-value">6-8</span>
+                        <span class="stat-label">Niños</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">🎯</span>
+                        <span class="stat-value">1h</span>
+                        <span class="stat-label">Por Sesión</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-icon">🎉</span>
+                        <span class="stat-value">15+</span>
+                        <span class="stat-label">Proyectos</span>
+                    </div>
+                </div>
+                
+                <div class="hero-value-props">
+                    <div class="value-prop">✓ Robots LEGO WeDo incluidos</div>
+                    <div class="value-prop">✓ Programación 100% visual</div>
+                    <div class="value-prop">✓ Aprender jugando y creando</div>
+                </div>
+                
+                <div class="hero-cta-group">
+                    <a href="../index.html#inscripciones" class="btn-cta-hero cta-primary">🎁 Clase Gratis</a>
+                    <a href="#programa-detalle" class="btn-cta-hero cta-secondary">📚 Ver Qué Hacen</a>
+                </div>
+                
+                <div class="availability-badge">
+                    <span class="pulse-dot"></span>
+                    ¡Grupos muy reducidos! 6-8 niños máximo
+                </div>
+            </div>
+        </div>
+        
+        <!-- Resultados Section -->
+        <section class="resultados-section">
+            <h3>✨ Lo que dicen las familias</h3>
+            <div class="resultados-grid">
+                <div class="resultado-card">
+                    <div class="resultado-numero">15+</div>
+                    <div class="resultado-texto">Proyectos divertidos</div>
+                    <div class="resultado-detalle">Juegos y robots</div>
+                </div>
+                <div class="resultado-card">
+                    <div class="resultado-numero">100%</div>
+                    <div class="resultado-texto">Aprenden jugando</div>
+                    <div class="resultado-detalle">Sin darse cuenta</div>
+                </div>
+                <div class="resultado-card">
+                    <div class="resultado-numero">98%</div>
+                    <div class="resultado-texto">Quieren volver</div>
+                    <div class="resultado-detalle">Cada semana emocionados</div>
+                </div>
+                <div class="resultado-card">
+                    <div class="resultado-numero">5★</div>
+                    <div class="resultado-texto">Satisfacción familias</div>
+                    <div class="resultado-detalle">Progreso visible</div>
+                </div>
+            </div>
+            
+            <div class="mini-testimonios">
+                <div class="mini-testimonio">
+                    <div class="testimonio-avatar">👧</div>
+                    <div class="testimonio-content">
+                        <p>"Mi hija llega a casa emocionada contándonos el robot que ha creado. ¡No para de hablar de robótica!"</p>
+                        <div class="testimonio-autor">- Madre de Lucía, 7 años</div>
+                    </div>
+                </div>
+                <div class="mini-testimonio">
+                    <div class="testimonio-avatar">👦</div>
+                    <div class="testimonio-content">
+                        <p>"No sabe leer muy bien aún, pero ya está creando videojuegos. Es increíble cómo aprenden"</p>
+                        <div class="testimonio-autor">- Padre de Martín, 6 años</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Por qué es perfecto -->
+        <section class="destacado-section">
+                <div class="section-header">
+                    <span class="section-icon">✨</span>
+                    <h2>¿Por qué es perfecto para esta edad?</h2>
+                </div>
+                <div class="caracteristicas-grid">
+                    <div class="caracteristica-card">
+                        <div class="caracteristica-icon">🎮</div>
+                        <h3>Totalmente Visual</h3>
+                        <p>Sin necesidad de leer o escribir código complejo</p>
+                    </div>
+                    <div class="caracteristica-card">
+                        <div class="caracteristica-icon">🎨</div>
+                        <h3>Creativo</h3>
+                        <p>Diseñan sus propios personajes y mundos</p>
+                    </div>
+                    <div class="caracteristica-card">
+                        <div class="caracteristica-icon">🤝</div>
+                        <h3>Colaborativo</h3>
+                        <p>Trabajan en parejas y aprenden a compartir</p>
+                    </div>
+                    <div class="caracteristica-card">
+                        <div class="caracteristica-icon">🎪</div>
+                        <h3>Divertido</h3>
+                        <p>Cada sesión es como un juego diferente</p>
+                    </div>
+                    <div class="caracteristica-card">
+                        <div class="caracteristica-icon">🏆</div>
+                        <h3>Gratificante</h3>
+                        <p>Ven resultados inmediatos de sus creaciones</p>
+                    </div>
+                    <div class="caracteristica-card">
+                        <div class="caracteristica-icon">🧩</div>
+                        <h3>Adaptado</h3>
+                        <p>Respetamos el ritmo de cada niño</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Programa del curso -->
+            <section class="seccion-mejorada">
+                <div class="section-header">
+                    <span class="section-icon">📚</span>
+                    <h2>¿Qué Aprenderán?</h2>
+                    <p class="section-subtitle">30 semanas de diversión tecnológica divididas en 3 trimestres</p>
+                </div>
+                
+                <div class="cards-grid-3col">
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">🎮</div>
+                        <h3>Trimestre 1</h3>
+                        <h4>Programación Visual</h4>
+                        <p><strong>ScratchJr</strong> - Bloques de colores</p>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">🚶</span>
+                                <div class="card-item-content">
+                                    <h5>Movimientos y eventos</h5>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🔄</span>
+                                <div class="card-item-content">
+                                    <h5>Bucles y secuencias</h5>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🎵</span>
+                                <div class="card-item-content">
+                                    <h5>Sonidos y efectos</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tags-container">
+                            <span class="tag-pill">🐱 Mascota virtual</span>
+                            <span class="tag-pill">📚 Cuento interactivo</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card-mejorada destacada">
+                        <div class="card-icon">🤖</div>
+                        <h3>Trimestre 2</h3>
+                        <h4>Robótica LEGO</h4>
+                        <p><strong>LEGO WeDo 2.0</strong> - Construir y programar</p>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">🏗️</span>
+                                <div class="card-item-content">
+                                    <h5>Construcción física</h5>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">⚙️</span>
+                                <div class="card-item-content">
+                                    <h5>Motores y sensores</h5>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">💡</span>
+                                <div class="card-item-content">
+                                    <h5>Luces y sonidos</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tags-container">
+                            <span class="tag-pill">🦁 León rugiente</span>
+                            <span class="tag-pill">⚽ Portero automático</span>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">🎨</div>
+                        <h3>Trimestre 3</h3>
+                        <h4>Proyectos Creativos</h4>
+                        <p><strong>Combinado</strong> - Libertad creativa</p>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">🎮</span>
+                                <div class="card-item-content">
+                                    <h5>Juegos interactivos</h5>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">📖</span>
+                                <div class="card-item-content">
+                                    <h5>Historias animadas</h5>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🏆</span>
+                                <div class="card-item-content">
+                                    <h5>Proyecto final</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tags-container">
+                            <span class="tag-pill">🎪 Exhibición familias</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Herramientas -->
+            <section class="seccion-mejorada">
+                <div class="section-header">
+                    <span class="section-icon">🛠️</span>
+                    <h2>Herramientas que Usamos</h2>
+                    <p class="section-subtitle">Tecnología diseñada especialmente para que los más pequeños aprendan jugando</p>
+                </div>
+                
+                <div class="cards-grid-2col">
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">💻</div>
+                        <h3>Software Educativo</h3>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">🎮</span>
+                                <div class="card-item-content">
+                                    <h5>ScratchJr</h5>
+                                    <p>Programación visual con bloques de colores</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🤖</span>
+                                <div class="card-item-content">
+                                    <h5>LEGO WeDo 2.0 App</h5>
+                                    <p>Control y programación de robots LEGO</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">📚</span>
+                                <div class="card-item-content">
+                                    <h5>Code.org Jr</h5>
+                                    <p>Ejercicios guiados paso a paso</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🎯</span>
+                                <div class="card-item-content">
+                                    <h5>Juegos Interactivos</h5>
+                                    <p>Plataformas educativas divertidas</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">🤖</div>
+                        <h3>Hardware & Robótica</h3>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">📱</span>
+                                <div class="card-item-content">
+                                    <h5>Tablets</h5>
+                                    <p>Pantallas grandes para mejor visualización</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🧱</span>
+                                <div class="card-item-content">
+                                    <h5>LEGO WeDo 2.0</h5>
+                                    <p>Kits completos con motores y sensores</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">⚙️</span>
+                                <div class="card-item-content">
+                                    <h5>Sensores LEGO</h5>
+                                    <p>Detección de movimiento y distancia</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🖥️</span>
+                                <div class="card-item-content">
+                                    <h5>Equipos Táctiles</h5>
+                                    <p>Interfaces intuitivas y fáciles de usar</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Información Práctica -->
+            <section class="seccion-mejorada">
+                <div class="section-header">
+                    <span class="section-icon">📅</span>
+                    <h2>Información Práctica</h2>
+                    <p class="section-subtitle">Todo lo que necesitas saber para inscribir a tu hijo</p>
+                </div>
+                
+                <div class="cards-grid-3col">
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">⏰</div>
+                        <h3>Duración</h3>
+                        <table class="tabla-info">
+                            <tr>
+                                <td>Sesiones</td>
+                                <td><strong>30 semanas</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Frecuencia</td>
+                                <td><strong>1 vez/semana</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Duración</td>
+                                <td><strong>1 hora</strong></td>
+                            </tr>
+                            <tr>
+                                <td>Total</td>
+                                <td><strong>30 horas</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">👥</div>
+                        <h3>Grupos Reducidos</h3>
+                        <ul>
+                            <li>6-8 niños máximo</li>
+                            <li>Trabajo en parejas</li>
+                            <li>2 profesores por grupo</li>
+                            <li>Atención personalizada</li>
+                        </ul>
+                        <div class="info-box-especial" style="margin-top: 1rem;">
+                            <h4>📍 Horarios</h4>
+                            <p><strong>Entre semana:</strong></p>
+                            <p>• Lunes 17:00-18:00<br>• Miércoles 17:00-18:00</p>
+                            <p><strong>Fin de semana:</strong></p>
+                            <p>• Sábados 10:00-11:00</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card-mejorada destacada">
+                        <div class="card-icon">💰</div>
+                        <h3>Inversión</h3>
+                        <p style="text-align: center; font-size: 2.5rem; color: #0066FF; margin: 1rem 0;">
+                            <strong>70€</strong><span style="font-size: 1.2rem; color: #6B7280;">/mes</span>
+                        </p>
+                        <ul>
+                            <li>Material incluido</li>
+                            <li>Robots LEGO WeDo</li>
+                            <li>Acceso a plataformas</li>
+                            <li>Certificado final</li>
+                        </ul>
+                        <table class="tabla-info" style="margin-top: 1rem;">
+                            <tr>
+                                <td>Matrícula</td>
+                                <td><strong>50€</strong> (una vez)</td>
+                            </tr>
+                            <tr>
+                                <td>Descuento hermanos</td>
+                                <td><strong>15%</strong></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Habilidades que Desarrollan -->
+            <section class="seccion-mejorada">
+                <div class="section-header">
+                    <span class="section-icon">🌟</span>
+                    <h2>Habilidades que Desarrollan</h2>
+                    <p class="section-subtitle">Mucho más que programación: crecimiento integral para tu hijo</p>
+                </div>
+                
+                <div class="cards-grid-2col">
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">💻</div>
+                        <h3>Habilidades Técnicas</h3>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">🎮</span>
+                                <div class="card-item-content">
+                                    <h5>Programación básica</h5>
+                                    <p>Secuencias, eventos, bucles simples</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🤖</span>
+                                <div class="card-item-content">
+                                    <h5>Robótica inicial</h5>
+                                    <p>Construcción, montaje, programación visual</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🎨</span>
+                                <div class="card-item-content">
+                                    <h5>Creatividad digital</h5>
+                                    <p>Diseño de personajes, escenarios, historias</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🔧</span>
+                                <div class="card-item-content">
+                                    <h5>Motricidad fina</h5>
+                                    <p>Manipulación de piezas pequeñas y tablets</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="info-card-mejorada destacada">
+                        <div class="card-icon">🧠</div>
+                        <h3>Habilidades Sociales y Cognitivas</h3>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">🧠</span>
+                                <div class="card-item-content">
+                                    <h5>Pensamiento lógico</h5>
+                                    <p>Causa-efecto, secuencias, patrones</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🎯</span>
+                                <div class="card-item-content">
+                                    <h5>Resolución de problemas</h5>
+                                    <p>Prueba-error, persistencia</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🤝</span>
+                                <div class="card-item-content">
+                                    <h5>Trabajo en equipo</h5>
+                                    <p>Compartir, colaborar, comunicar</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">💬</span>
+                                <div class="card-item-content">
+                                    <h5>Expresión oral</h5>
+                                    <p>Explicar sus creaciones con confianza</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">⭐</span>
+                                <div class="card-item-content">
+                                    <h5>Autoconfianza</h5>
+                                    <p>"Yo puedo crear cosas increíbles"</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">⏱️</span>
+                                <div class="card-item-content">
+                                    <h5>Concentración</h5>
+                                    <p>Completar proyectos con dedicación</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Información para Familias -->
+            <section class="seccion-mejorada">
+                <div class="section-header">
+                    <span class="section-icon">👨‍👩‍👧</span>
+                    <h2>Información para las Familias</h2>
+                    <p class="section-subtitle">Resolvemos tus dudas sobre el programa</p>
+                </div>
+                
+                <div class="cards-grid-2col">
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">❓</div>
+                        <h3>¿Mi hijo/a es muy pequeño/a?</h3>
+                        <p>¡Para nada! Este programa está específicamente diseñado para niños de 6-8 años. No necesitan saber leer con fluidez, ya que usamos iconos, colores y mucha ayuda visual. Lo más importante es su curiosidad y ganas de jugar.</p>
+                    </div>
+                    
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">🎒</div>
+                        <h3>¿Qué necesita traer?</h3>
+                        <p>¡NADA! Todo el material está incluido y permanece en la academia. Solo deben venir con ropa cómoda y muchas ganas de aprender.</p>
+                    </div>
+                    
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">📝</div>
+                        <h3>¿Hay deberes o trabajo en casa?</h3>
+                        <p>No hay deberes obligatorios. Sin embargo, muchos niños piden seguir practicando en casa. En ese caso, podemos recomendar apps gratuitas apropiadas para su edad.</p>
+                    </div>
+                    
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">📱</div>
+                        <h3>¿Cómo sabré lo que hace mi hijo/a?</h3>
+                        <div class="card-items-list">
+                            <div class="card-item">
+                                <span class="card-item-icon">📸</span>
+                                <div class="card-item-content">
+                                    <h5>Fotos semanales</h5>
+                                    <p>Compartimos imágenes en grupo privado</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">📹</span>
+                                <div class="card-item-content">
+                                    <h5>Videos cortos</h5>
+                                    <p>Sus robots en acción</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">📊</span>
+                                <div class="card-item-content">
+                                    <h5>Informe trimestral</h5>
+                                    <p>Progreso y habilidades</p>
+                                </div>
+                            </div>
+                            <div class="card-item">
+                                <span class="card-item-icon">🎪</span>
+                                <div class="card-item-content">
+                                    <h5>Exhibición final</h5>
+                                    <p>Presentación para familias</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="info-box-especial">
+                    <h3>🌟 Beneficios más allá de la tecnología</h3>
+                    <p>Aunque aprendan sobre robots y programación, lo más importante es que desarrollan habilidades fundamentales:</p>
+                    <div class="tags-container">
+                        <span class="tag-pill">✅ Capacidad de concentración</span>
+                        <span class="tag-pill">✅ Paciencia y perseverancia</span>
+                        <span class="tag-pill">✅ Trabajo en equipo</span>
+                        <span class="tag-pill">✅ Expresión creativa</span>
+                        <span class="tag-pill">✅ Confianza en sí mismos</span>
+                        <span class="tag-pill">✅ Curiosidad por aprender</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Ejemplos de Proyectos -->
+            <section class="seccion-mejorada">
+                <div class="section-header">
+                    <span class="section-icon">🎨</span>
+                    <h2>Ejemplos de lo que Crean</h2>
+                    <p class="section-subtitle">Proyectos reales que tus hijos podrán crear</p>
+                </div>
+                
+                <div class="ejemplos-grid-mejorada">
+                    <div class="ejemplo-card-mejorada">
+                        <div class="ejemplo-numero">01</div>
+                        <div class="ejemplo-icon">🐾</div>
+                        <h3>Mi Mascota Digital</h3>
+                        <p>Los niños crean una mascota virtual que reacciona cuando la tocan, hace sonidos y se mueve por la pantalla.</p>
+                        <div class="ejemplo-skills">
+                            <h4>Lo que aprenden:</h4>
+                            <ul>
+                                <li>Diseñar su propio personaje</li>
+                                <li>Programar movimientos</li>
+                                <li>Añadir sonidos</li>
+                                <li>Crear interacciones táctiles</li>
+                            </ul>
+                        </div>
+                        <div class="ejemplo-resultado">
+                            <strong>Resultado:</strong> Un juego interactivo que pueden mostrar a amigos y familia
+                        </div>
+                    </div>
+
+                    <div class="ejemplo-card-mejorada destacado">
+                        <div class="ejemplo-numero">02</div>
+                        <div class="ejemplo-icon">🦁</div>
+                        <h3>León Rugiente LEGO</h3>
+                        <p>Construyen un león con LEGO que abre y cierra la boca mientras ruge.</p>
+                        <div class="ejemplo-skills">
+                            <h4>Pasos del proyecto:</h4>
+                            <ol>
+                                <li>Construir el león siguiendo instrucciones</li>
+                                <li>Conectar el motor a la mandíbula</li>
+                                <li>Programar el movimiento</li>
+                                <li>Añadir el rugido</li>
+                                <li>Decorar y personalizar</li>
+                            </ol>
+                        </div>
+                        <div class="ejemplo-resultado">
+                            <strong>Lo mejor:</strong> ¡Ver cómo su robot cobra vida!
+                        </div>
+                    </div>
+
+                    <div class="ejemplo-card-mejorada">
+                        <div class="ejemplo-numero">03</div>
+                        <div class="ejemplo-icon">📖</div>
+                        <h3>Cuento Interactivo</h3>
+                        <p>Crean una historia donde los espectadores pueden elegir qué pasa después.</p>
+                        <div class="ejemplo-skills">
+                            <h4>Elementos del cuento:</h4>
+                            <ul>
+                                <li>Historia con principio, desarrollo y final</li>
+                                <li>Personajes que hablan y se mueven</li>
+                                <li>Diferentes escenarios</li>
+                                <li>Decisiones: "¿Qué quieres hacer?"</li>
+                                <li>Efectos de sonido y música</li>
+                            </ul>
+                        </div>
+                        <div class="ejemplo-resultado">
+                            <strong>Creatividad:</strong> Cada niño crea su historia única
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Preguntas Frecuentes -->
+            <section class="seccion-mejorada">
+                <div class="section-header">
+                    <span class="section-icon">❓</span>
+                    <h2>Preguntas Frecuentes</h2>
+                    <p class="section-subtitle">Resolvemos tus últimas dudas</p>
+                </div>
+                
+                <div class="cards-grid-2col">
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">❓</div>
+                        <h3>¿Es demasiado difícil para un niño de 6 años?</h3>
+                        <p>No, el programa está diseñado específicamente para esta edad. Usamos interfaces muy visuales y el aprendizaje es gradual. Los niños aprenden jugando sin darse cuenta de que están programando.</p>
+                    </div>
+
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">💻</div>
+                        <h3>¿Necesita tablet o ordenador en casa?</h3>
+                        <p>No es necesario. Todo se hace en la academia. Si tienen dispositivo en casa y quieren practicar, les recomendamos apps gratuitas.</p>
+                    </div>
+
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">📅</div>
+                        <h3>¿Qué pasa si mi hijo/a se pierde una clase?</h3>
+                        <p>No hay problema. Cada proyecto es independiente y puede recuperarse. Además, trabajamos en parejas y los compañeros ayudan a ponerse al día.</p>
+                    </div>
+
+                    <div class="info-card-mejorada">
+                        <div class="card-icon">🎓</div>
+                        <h3>¿Pueden inscribirse a mitad de curso?</h3>
+                        <p>Sí, aceptamos inscripciones todo el año. Adaptamos la entrada del nuevo alumno para que se integre sin problemas.</p>
+                    </div>
+                </div>
+            </section>
+
+            <div class="cta-section" style="margin: 2rem -2rem; padding: 3rem 2rem;">
+                <div class="cta-eyebrow">🎉 Primera clase gratis</div>
+                <div class="cta-content">
+                    <h2>¿Listo para convertirse en Pequeño Inventor?</h2>
+                    <p>Dale a tu hijo/a la oportunidad de aprender jugando. Robots, videojuegos y creatividad en un entorno seguro y divertido.</p>
+                    
+                    <div class="final-benefits">
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🎮</div>
+                            <h4>Crea Juegos</h4>
+                            <p>ScratchJr totalmente visual</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🤖</div>
+                            <h4>Robots LEGO</h4>
+                            <p>Construye y programa</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">🧠</div>
+                            <h4>Desarrollo Integral</h4>
+                            <p>Lógica, creatividad, confianza</p>
+                        </div>
+                        <div class="benefit-item">
+                            <div class="benefit-icon">❤️</div>
+                            <h4>Ambiente Seguro</h4>
+                            <p>2 profes, grupos muy pequeños</p>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-cta-group" style="margin-top: 2rem;">
+                        <a href="../index.html#inscripciones" class="btn-cta cta-primary">🎁 Clase Gratis</a>
+                        <a href="../index.html#horarios" class="btn-cta cta-secondary">📅 Ver Horarios</a>
+                    </div>
+                    
+                    <div class="cta-guarantee">
+                        <p>✓ Primera clase completamente gratis</p>
+                        <p>✓ Si no le gusta, te devolvemos el 100% (primer mes)</p>
+                    </div>
+                </div>
+                
+                <div class="faq-quick">
+                    <h3>Preguntas de las familias</h3>
+                    <div class="faq-grid">
+                        <div class="faq-item">
+                            <h4>¿Es muy pequeño/a para programar?</h4>
+                            <p>¡Para nada! El programa está diseñado específicamente para 6-8 años. Usamos bloques visuales con colores e iconos. No necesitan saber leer con fluidez. Aprenden jugando sin darse cuenta.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>¿Qué necesita traer?</h4>
+                            <p>¡NADA! Todo el material está incluido: robots LEGO, tablets, software. Solo deben venir con ropa cómoda y muchas ganas de aprender. Todo permanece en la academia.</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>¿Cómo sé si está aprendiendo?</h4>
+                            <p>Fotos/vídeos semanales en grupo privado, informe trimestral detallado, exhibición final donde presentan proyectos. Y lo mejor: ¡ver cómo llegan a casa emocionados contándote lo que han creado!</p>
+                        </div>
+                        <div class="faq-item">
+                            <h4>¿Y si se aburre o se queda atrás?</h4>
+                            <p>Grupos de 6-8 niños máximo con 2 profesores. Atención personalizada garantizada. Adaptamos el ritmo a cada niño. Los más rápidos tienen retos extra, los que necesitan más tiempo reciben apoyo individual.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="program-navigation">
+                <a href="../index.html#programas-robotica" class="nav-btn nav-home">
+                    <span class="nav-icon">🏠</span>
+                    <span class="nav-label">Ver Todos los Programas</span>
+                </a>
+                <a href="programa-9-11.html" class="nav-btn nav-next">
+                    <div class="nav-content">
+                        <span class="nav-label">Siguiente Nivel</span>
+                        <span class="nav-title">Exploradores Tecnológicos (9-11 años)</span>
+                    </div>
+                    <span class="nav-arrow">→</span>
+                </a>
+            </div>
+        </article>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-simple">
+                <div class="footer-info">
+                    <img src="../images/mascota.png" alt="Academia Robótica e IA" style="height: 40px; margin-right: 10px;">
+                    <span>© 2026 Academia de Robótica e IA - Formando a los innovadores del futuro</span>
+                </div>
+                <div class="footer-links">
+                    <a href="programa-6-8.html">6-8 años</a>
+                    <a href="programa-9-11.html">9-11 años</a>
+                    <a href="programa-12-14.html">12-14 años</a>
+                    <a href="programa-15-17.html">+15 años</a>
+                    <span class="separator">|</span>
+                    <a href="../index.html#valor">Por qué elegirnos</a>
+                    <a href="../index.html#horarios">Horarios</a>
+                    <a href="../index.html#inscripciones">Contacto</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleSolucion(id) {
+            const elemento = document.getElementById(id);
+            if (elemento.style.display === 'none') {
+                elemento.style.display = 'block';
+            } else {
+                elemento.style.display = 'none';
+            }
+        }
+    </script>
+    <script src="../js/educacion-mejorado.js"></script>
+</body>
+</html>

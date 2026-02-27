@@ -1,0 +1,61 @@
+{
+  "name": "academia-robotica-ia",
+  "version": "2.0.0",
+  "description": "Sitio web de la Academia de Robótica e IA - Educación extraescolar en tecnología para niños y jóvenes",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=8080 --open=index.html",
+    "start": "npm run dev",
+    "build": "npm run minify-css && npm run minify-js && npm run optimize-images",
+    "minify-css": "cleancss -o dist/css/styles.min.css css/3duca-styles.css css/educacion-mejorado.css",
+    "minify-js": "terser js/3duca-scripts.js js/educacion-mejorado.js -o dist/js/scripts.min.js --compress --mangle",
+    "optimize-images": "imagemin images/* --out-dir=dist/images",
+    "lint": "eslint js/**/*.js",
+    "lint:fix": "eslint js/**/*.js --fix",
+    "format": "prettier --write \"**/*.{js,css,html,json,md}\"",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "validate": "npm run lint && npm run test",
+    "generate-sitemap": "node scripts/generate-sitemap.js",
+    "backup": "node scripts/backup.js",
+    "deploy": "npm run build && npm run generate-sitemap"
+  },
+  "keywords": [
+    "robótica",
+    "educación",
+    "programación",
+    "inteligencia artificial",
+    "STEAM",
+    "niños",
+    "extraescolar"
+  ],
+  "author": "Academia de Robótica e IA",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "clean-css-cli": "^5.6.3",
+    "eslint": "^8.50.0",
+    "imagemin": "^8.0.1",
+    "imagemin-cli": "^7.0.0",
+    "jest": "^29.7.0",
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.1",
+    "prettier": "^3.0.3",
+    "terser": "^5.20.0"
+  },
+  "dependencies": {
+    "dotenv": "^16.3.1"
+  },
+  "engines": {
+    "node": ">=16.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tu-usuario/academia-robotica"
+  },
+  "bugs": {
+    "url": "https://github.com/tu-usuario/academia-robotica/issues"
+  }
+}

@@ -1,0 +1,872 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academia de Robótica e IA | La Mejor Actividad Extraescolar para tus Hijos</title>
+    <meta name="description"
+        content="Centro de actividad extraescolar especializado en robótica, programación e IA para niños y jóvenes de 6 a 17 años. Formación tecnológica divertida y educativa.">
+    <meta name="keywords"
+        content="actividad extraescolar, robótica niños, programación para niños, inteligencia artificial jóvenes, academia tecnología, extraescolares valencia">
+    <meta name="author" content="Academia Robótica e IA">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.academiatech.es/">
+    <meta property="og:title" content="Academia de Robótica e IA | La Mejor Actividad Extraescolar">
+    <meta property="og:description"
+        content="Descubre la actividad extraescolar que apasiona a los niños. Robótica, programación e inteligencia artificial aprendiendo mientras juegan.">
+    <meta property="og:image" content="images/mascota.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://www.academiatech.es/">
+    <meta property="twitter:title" content="Academia de Robótica e IA | La Mejor Actividad Extraescolar">
+    <meta property="twitter:description"
+        content="Centro líder en actividades extraescolares tecnológicas. Formando a los innovadores del futuro con LEGO, Arduino y Python.">
+    <meta property="twitter:image" content="images/mascota.png">
+
+    <!-- Preload recursos críticos -->
+    <link rel="preload" href="css/3duca-styles.css" as="style">
+    <link rel="preload" href="images/mascota.png" as="image">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+        media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Fredoka:wght@400;500;600;700&display=swap"></noscript>
+    <link rel="stylesheet" href="css/3duca-styles.css">
+    
+    <!-- Favicon y meta tags adicionales -->
+    <link rel="icon" type="image/png" href="images/mascota.png">
+    <link rel="apple-touch-icon" href="images/mascota.png">
+    <meta name="theme-color" content="#0066FF">
+    <link rel="manifest" href="manifest.json">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "Academia de Robótica e IA",
+      "description": "Centro de actividad extraescolar especializado en robótica, programación e IA para niños y jóvenes de 6 a 17 años",
+      "url": "https://www.academiatech.es/",
+      "logo": "https://www.academiatech.es/images/mascota.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Calle Principal, 123",
+        "addressLocality": "Valencia",
+        "addressCountry": "ES"
+      },
+      "telephone": "+34666123456",
+      "priceRange": "70€-100€",
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Pequeños Inventores (6-8 años)",
+          "price": "70",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Exploradores Tecnológicos (9-11 años)",
+          "price": "80",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Programadores y Makers (12-14 años)",
+          "price": "90",
+          "priceCurrency": "EUR"
+        },
+        {
+          "@type": "Offer",
+          "name": "Ingenieros Junior (+15 años)",
+          "price": "100",
+          "priceCurrency": "EUR"
+        }
+      ]
+    }
+    </script>
+</head>
+
+<body>
+    <!-- Navegación Fija Superior -->
+    <header class="navbar-fixed" role="banner">
+        <div class="container-nav">
+            <div class="logo-section">
+                <img src="images/mascota.png" alt="Mascota robot amigable de la academia" class="mascota-img"
+                    style="height: 50px; width: auto;" loading="eager">
+                <span class="logo-text" aria-label="Academia Robótica e IA"> Academia Robótica e IA</span>
+            </div>
+            <nav class="main-nav" role="navigation" aria-label="Navegación principal">
+                <a href="#programas-robotica" class="nav-link">Extraescolares</a>
+                <a href="#valor" class="nav-link">La Academia</a>
+                <a href="#horarios" class="nav-link">Horarios</a>
+                <a href="#inscripciones" class="nav-link">Contacto</a>
+            </nav>
+            <div class="nav-actions">
+                <a href="#inscripciones" class="btn-inscripcion" aria-label="Ir a inscripciones"> Inscripciones</a>
+            </div>
+            <button class="mobile-menu-toggle" aria-label="Abrir menú de navegación" aria-expanded="false">☰</button>
+        </div>
+    </header>
+
+    <!-- Hero Section con Video de Fondo -->
+    <section class="hero-section" role="banner" aria-label="Sección principal">
+        <div class="video-background">
+            <video autoplay muted loop playsinline id="heroVideo" preload="metadata" poster="images/video-poster.jpg" aria-hidden="true">
+                <source src="videos/Age-of-Beyond.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+            <div class="video-overlay" aria-hidden="true"></div>
+        </div>
+        <div class="hero-blob blob-1" aria-hidden="true"></div>
+        <div class="hero-blob blob-2" aria-hidden="true"></div>
+        <div class="hero-content">
+            <div class="hero-mascot">
+                <img src="images/mascota.png" alt="Mascota Academia Robótica" class="mascot-floating" loading="eager">
+            </div>
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    La actividad extraescolar de los
+                    <span class="highlight-gradient">innovadores del futuro</span>
+                </h1>
+                <p class="hero-description">
+                    Más que una academia, somos tu centro de referencia en Robótica e Inteligencia Artificial.
+                    Niños y jóvenes de 6 a 17 años aprenden, se divierten y crean el futuro cada tarde.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#programas-robotica" class="btn-primary btn-lg" aria-label="Ver programas de robótica">
+                        🤖 Ver Programas
+                    </a>
+                    <a href="#inscripciones" class="btn-secondary btn-lg" aria-label="Reservar clase gratuita">
+                        🎁 Clase Gratuita
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Sección Detallada: Programas de Robótica e IA por Edades -->
+    <section id="programas-robotica" class="programas-detalle-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Programas de <span class="text-gradient">Robótica e IA</span> por Edades</h2>
+                <p class="section-subtitle">Cursos adaptados al nivel de desarrollo de cada grupo</p>
+            </div>
+
+            <div class="categorias-grid-edades">
+                <!-- 6-8 años -->
+                <a href="educacion/programa-6-8.html" class="programa-edad-card edad-infantil">
+                    <div class="programa-icon-large">🧸</div>
+                    <div class="edad-badge">6-8 años</div>
+                    <h3>Pequeños Inventores</h3>
+                    <p>Introducción lúdica a la robótica y programación visual</p>
+                    <ul class="contenido-programa">
+                        <li>🎮 Programación con bloques (Scratch Jr)</li>
+                        <li>🤖 Robots educativos (LEGO WeDo)</li>
+                        <li>🎨 Creatividad y diseño</li>
+                        <li>🧩 Pensamiento lógico básico</li>
+                    </ul>
+                    <div class="programa-footer">
+                        <span class="btn-ver-programa">Ver Programa Completo →</span>
+                    </div>
+                </a>
+
+                <!-- 9-11 años -->
+                <a href="educacion/programa-9-11.html" class="programa-edad-card edad-primaria">
+                    <div class="programa-icon-large">🚀</div>
+                    <div class="edad-badge">9-11 años</div>
+                    <h3>Exploradores Tecnológicos</h3>
+                    <p>Fundamentos de robótica y primeros pasos en IA</p>
+                    <ul class="contenido-programa">
+                        <li>💻 Scratch avanzado y Python básico</li>
+                        <li>🤖 LEGO Mindstorms / mBot</li>
+                        <li>🎯 Sensores y actuadores</li>
+                        <li>🧠 Introducción a IA: reconocimiento</li>
+                    </ul>
+                    <div class="programa-footer">
+                        <span class="btn-ver-programa">Ver Programa Completo →</span>
+                    </div>
+                </a>
+
+                <!-- 12-14 años -->
+                <a href="educacion/programa-12-14.html" class="programa-edad-card edad-secundaria">
+                    <div class="programa-icon-large">⚡</div>
+                    <div class="edad-badge">12-14 años</div>
+                    <h3>Programadores y Makers</h3>
+                    <p>Electrónica, programación y proyectos de IA</p>
+                    <ul class="contenido-programa">
+                        <li>🔌 Arduino y electrónica</li>
+                        <li>🐍 Python para robótica</li>
+                        <li>🧠 Machine Learning básico</li>
+                        <li>📱 Apps e interfaces</li>
+                    </ul>
+                    <div class="programa-footer">
+                        <span class="btn-ver-programa">Ver Programa Completo →</span>
+                    </div>
+                </a>
+
+                <!-- +15 años -->
+                <a href="educacion/programa-15-17.html" class="programa-edad-card edad-bachillerato">
+                    <div class="programa-icon-large">🎯</div>
+                    <div class="edad-badge">+15 años</div>
+                    <h3>Ingenieros Junior</h3>
+                    <p>IA avanzada, robótica profesional y competiciones</p>
+                    <ul class="contenido-programa">
+                        <li>🤖 ROS y robots avanzados</li>
+                        <li>🧠 Deep Learning y redes neuronales</li>
+                        <li>👁️ Visión artificial (OpenCV)</li>
+                        <li>🏆 Preparación para competiciones</li>
+                    </ul>
+                    <div class="programa-footer">
+                        <span class="btn-ver-programa">Ver Programa Completo →</span>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Tecnologías que Aprenderán -->
+            <div class="tecnologias-subsection">
+                <h3 class="subsection-title">Tecnologías que Aprenderán</h3>
+                <div class="tecnologias-grid-mini">
+                    <div class="tech-mini-card">
+                        <div class="tech-mini-icon">🤖</div>
+                        <h4>Robótica</h4>
+                        <ul>
+                            <li>LEGO Mindstorms / WeDo</li>
+                            <li>Arduino y microcontroladores</li>
+                            <li>Raspberry Pi</li>
+                            <li>ROS (Robot Operating System)</li>
+                        </ul>
+                    </div>
+                    <div class="tech-mini-card">
+                        <div class="tech-mini-icon">🧠</div>
+                        <h4>Inteligencia Artificial</h4>
+                        <ul>
+                            <li>Machine Learning</li>
+                            <li>Redes Neuronales</li>
+                            <li>Visión Artificial</li>
+                            <li>Procesamiento de Lenguaje</li>
+                        </ul>
+                    </div>
+                    <div class="tech-mini-card">
+                        <div class="tech-mini-icon">💻</div>
+                        <h4>Programación</h4>
+                        <ul>
+                            <li>Scratch / Blockly</li>
+                            <li>Python</li>
+                            <li>C/C++ (Arduino)</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tech-mini-card">
+                        <div class="tech-mini-icon">🔧</div>
+                        <h4>Herramientas</h4>
+                        <ul>
+                            <li>TensorFlow / Keras</li>
+                            <li>OpenCV</li>
+                            <li>MIT App Inventor</li>
+                            <li>Simuladores 3D</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección ¿Por qué elegirnos? -->
+    <section id="valor" class="valor-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">¿Por qué elegir nuestra <span class="text-gradient">Academia de Robótica e
+                        IA</span>?</h2>
+                <p class="section-subtitle">Excelencia en formación tecnológica desde 2010</p>
+            </div>
+
+            <div class="valor-grid">
+                <div class="valor-card">
+                    <div class="valor-icon-3d">
+                        <div class="icon-3d seguridad-icon">👨‍🏫</div>
+                    </div>
+                    <h3>Profesores Ingenieros</h3>
+                    <p>Ingenieros especializados en robótica, programación e IA con experiencia docente y
+                        certificaciones profesionales.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="valor-icon-3d">
+                        <div class="icon-3d profesores-icon">🤖</div>
+                    </div>
+                    <h3>Tecnología Punta</h3>
+                    <p>Robots LEGO, Arduino, Raspberry Pi, kits de electrónica y software profesional de Machine
+                        Learning incluidos.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="valor-icon-3d">
+                        <div class="icon-3d grupos-icon">👥</div>
+                    </div>
+                    <h3>Grupos Reducidos</h3>
+                    <p>Máximo 6-8 alumnos por grupo para atención personalizada. Cada estudiante trabaja con su propio
+                        kit de robótica.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="valor-icon-3d">
+                        <div class="icon-3d material-icon">🎯</div>
+                    </div>
+                    <h3>Metodología STEAM</h3>
+                    <p>Aprendizaje basado en proyectos reales. Del concepto a la construcción, programación y
+                        presentación.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="valor-icon-3d">
+                        <div class="icon-3d flexibilidad-icon">🏆</div>
+                    </div>
+                    <h3>Competiciones</h3>
+                    <p>Preparación para First Lego League, WRO y olimpiadas de informática. Historial de éxitos en
+                        competiciones.</p>
+                </div>
+
+                <div class="valor-card">
+                    <div class="valor-icon-3d">
+                        <div class="icon-3d comunicacion-icon">📱</div>
+                    </div>
+                    <h3>Seguimiento Continuo</h3>
+                    <p>Informes trimestrales de progreso, acceso a repositorio GitHub del alumno y comunicación directa
+                        con profesores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Widget de Calendario/Horarios -->
+    <section id="horarios" class="horarios-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Encuentra tu <span class="text-gradient">horario perfecto</span></h2>
+                <p class="section-subtitle">Selecciona día y actividad para ver disponibilidad</p>
+            </div>
+
+            <div class="horarios-widget">
+                <!-- Selector de Días -->
+                <div class="dias-selector">
+                    <button class="dia-btn active" data-dia="lunes">
+                        <span class="dia-abrev">LUN</span>
+                        <span class="dia-completo">Lunes</span>
+                    </button>
+                    <button class="dia-btn" data-dia="martes">
+                        <span class="dia-abrev">MAR</span>
+                        <span class="dia-completo">Martes</span>
+                    </button>
+                    <button class="dia-btn" data-dia="miercoles">
+                        <span class="dia-abrev">MIÉ</span>
+                        <span class="dia-completo">Miércoles</span>
+                    </button>
+                    <button class="dia-btn" data-dia="jueves">
+                        <span class="dia-abrev">JUE</span>
+                        <span class="dia-completo">Jueves</span>
+                    </button>
+                    <button class="dia-btn" data-dia="viernes">
+                        <span class="dia-abrev">VIE</span>
+                        <span class="dia-completo">Viernes</span>
+                    </button>
+                    <button class="dia-btn" data-dia="sabado">
+                        <span class="dia-abrev">SÁB</span>
+                        <span class="dia-completo">Sábado</span>
+                    </button>
+                </div>
+
+                <!-- Tabla de Horarios -->
+                <div class="horarios-tabla" data-dia-activo="lunes">
+                    <div class="horario-item disponible">
+                        <div class="horario-tiempo">17:00 - 18:30</div>
+                        <div class="horario-actividad">🧸 Pequeños Inventores (6-8 años)</div>
+                        <span class="horario-plazas">4 plazas disponibles</span>
+                        <button class="btn-reservar">Reservar</button>
+                    </div>
+                    <div class="horario-item disponible">
+                        <div class="horario-tiempo">17:30 - 19:00</div>
+                        <div class="horario-actividad">🚀 Exploradores Tecnológicos (9-11 años)</div>
+                        <span class="horario-plazas">3 plazas disponibles</span>
+                        <button class="btn-reservar">Reservar</button>
+                    </div>
+                    <div class="horario-item disponible">
+                        <div class="horario-tiempo">18:00 - 20:00</div>
+                        <div class="horario-actividad">⚡ Programadores y Makers (12-14 años)</div>
+                        <span class="horario-plazas">5 plazas disponibles</span>
+                        <button class="btn-reservar">Reservar</button>
+                    </div>
+                    <div class="horario-item disponible">
+                        <div class="horario-tiempo">18:30 - 20:30</div>
+                        <div class="horario-actividad">🎯 Ingenieros Junior (+15 años)</div>
+                        <span class="horario-plazas">6 plazas disponibles</span>
+                        <button class="btn-reservar">Reservar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Información de Precios -->
+            <div class="precios-info">
+                <h3>💰 Inversión en el futuro de tus hijos</h3>
+                <div class="precios-grid">
+                    <div class="precio-card">
+                        <div class="precio-icono">🧸</div>
+                        <h4>6-8 años</h4>
+                        <div class="precio-cantidad">
+                            <span class="precio-numero">70€</span>
+                            <span class="precio-periodo">/mes</span>
+                        </div>
+                        <ul class="precio-incluye">
+                            <li>✓ 1.5h/semana (30 semanas)</li>
+                            <li>✓ Robots LEGO WeDo</li>
+                            <li>✓ Software incluido</li>
+                            <li>✓ Seguro incluido</li>
+                        </ul>
+                    </div>
+                    <div class="precio-card">
+                        <div class="precio-icono">🚀</div>
+                        <h4>9-11 años</h4>
+                        <div class="precio-cantidad">
+                            <span class="precio-numero">80€</span>
+                            <span class="precio-periodo">/mes</span>
+                        </div>
+                        <ul class="precio-incluye">
+                            <li>✓ 1.5h/semana (30 semanas)</li>
+                            <li>✓ LEGO Mindstorms/mBot</li>
+                            <li>✓ Python + Scratch</li>
+                            <li>✓ Material incluido</li>
+                        </ul>
+                    </div>
+                    <div class="precio-card destacado">
+                        <div class="badge-popular">🔥 Más completo</div>
+                        <div class="precio-icono">⚡</div>
+                        <h4>12-14 años</h4>
+                        <div class="precio-cantidad">
+                            <span class="precio-numero">90€</span>
+                            <span class="precio-periodo">/mes</span>
+                        </div>
+                        <ul class="precio-incluye">
+                            <li>✓ 2h/semana (30 semanas)</li>
+                            <li>✓ Kit Arduino completo</li>
+                            <li>✓ Python + Machine Learning</li>
+                            <li>✓ Componentes ilimitados</li>
+                        </ul>
+                    </div>
+                    <div class="precio-card">
+                        <div class="precio-icono">🎯</div>
+                        <h4>+15 años</h4>
+                        <div class="precio-cantidad">
+                            <span class="precio-numero">100€</span>
+                            <span class="precio-periodo">/mes</span>
+                        </div>
+                        <ul class="precio-incluye">
+                            <li>✓ 2h/semana (30 semanas)</li>
+                            <li>✓ ROS + Deep Learning</li>
+                            <li>✓ Raspberry Pi incluido</li>
+                            <li>✓ Prep. competiciones</li>
+                        </ul>
+                    </div>
+                </div>
+                <p class="precios-nota">
+                    📝 <strong>Matrícula: 50€ (una sola vez)</strong> • Descuento hermanos: 10% • Sin costes ocultos
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inscripciones / Clase Gratis -->
+    <section id="inscripciones" class="inscripciones-section">
+        <div class="container">
+            <div class="inscripciones-content">
+                <div class="inscripciones-imagen">
+                    <img src="images/mascota.png" alt="Mascota 3DUCA" class="mascota-grande">
+                </div>
+                <div class="inscripciones-form">
+                    <h2>🎁 Reserva tu clase de prueba <span class="text-gradient">GRATIS</span></h2>
+                    <p class="form-descripcion">
+                        Sin compromiso. Ven a conocernos y prueba cualquier actividad.
+                        ¡Te garantizamos que tu hijo saldrá con una sonrisa!
+                    </p>
+
+                    <form class="form-contacto">
+                        <div class="form-group">
+                            <label for="nombre-padre">Nombre del padre/madre *</label>
+                            <input type="text" id="nombre-padre" required placeholder="Tu nombre completo">
+                        </div>
+                        <div class="form-group">
+                            <label for="nombre-hijo">Nombre del niño/a *</label>
+                            <input type="text" id="nombre-hijo" required placeholder="Nombre de tu hijo/a">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="edad">Edad *</label>
+                                <select id="edad" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="6">6 años</option>
+                                    <option value="7">7 años</option>
+                                    <option value="8">8 años</option>
+                                    <option value="9">9 años</option>
+                                    <option value="10">10 años</option>
+                                    <option value="11">11 años</option>
+                                    <option value="12">12 años</option>
+                                    <option value="13">13 años</option>
+                                    <option value="14">14 años</option>
+                                    <option value="15">15 años</option>
+                                    <option value="16">16 años</option>
+                                    <option value="17">17 años</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="actividad">Actividad de interés *</label>
+                                <select id="actividad" required>
+                                    <option value="">Selecciona</option>
+                                    <option value="robotica">🤖 Robótica e IA</option>
+                                    <option value="arte">🎨 Arte Digital</option>
+                                    <option value="musica">🎵 Música</option>
+                                    <option value="refuerzo">📚 Refuerzo Escolar</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="telefono">Teléfono *</label>
+                            <input type="tel" id="telefono" required placeholder="+34 600 000 000">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" required placeholder="tu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje (opcional)</label>
+                            <textarea id="mensaje" rows="4" placeholder="¿Algo que quieras comentarnos?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">
+                            🚀 Reservar Clase Gratuita
+                        </button>
+                        <p class="form-privacidad">
+                            🔒 Tus datos están protegidos. Ver <a href="#">política de privacidad</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="Academia Robótica e IA">
+                        <span>🤖 Robótica e IA</span>
+                    </div>
+                    <p>Academia especializada en robótica, programación e inteligencia artificial para niños y jóvenes
+                        desde 2027.</p>
+                    <div class="footer-social">
+                        <a href="#" aria-label="Facebook">📘</a>
+                        <a href="#" aria-label="Instagram">📷</a>
+                        <a href="#" aria-label="YouTube">▶️</a>
+                        <a href="#" aria-label="GitHub">💻</a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Programas</h4>
+                    <ul>
+                        <li><a href="educacion/programa-6-8.html">6-8 años • Pequeños Inventores</a></li>
+                        <li><a href="educacion/programa-9-11.html">9-11 años • Exploradores Tech</a></li>
+                        <li><a href="educacion/programa-12-14.html">12-14 años • Makers</a></li>
+                        <li><a href="educacion/programa-15-17.html">+15 años • Ingenieros</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contacto</h4>
+                    <ul class="footer-contacto">
+                        <li>📍 Calle Principal, 123<br>Valencia, España</li>
+                        <li>📞 +34 666 123 456</li>
+                        <li>✉️ info@3duca.es</li>
+                        <li>🕐 Lun-Vie: 16:30-20:00<br>Sáb: 10:00-14:00</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Academia de Robótica e Inteligencia Artificial. Formando a los innovadores del futuro.
+                </p>
+                <div class="footer-legal">
+                    <a href="#" id="btnAvisoLegal">Aviso Legal</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modal Aviso Legal -->
+    <div id="modalAvisoLegal" class="modal-aviso-legal">
+        <div class="modal-content-legal">
+            <span class="close-modal">&times;</span>
+            <h2>📋 Aviso Legal y Normativa de Protección de Datos</h2>
+            
+            <div class="accordion-legal">
+                <!-- Identificación del Titular -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🏢 Identificación del Titular</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p><strong>Denominación Social:</strong> Academia de Robótica e Inteligencia Artificial S.L.</p>
+                        <p><strong>CIF:</strong> B-12345678</p>
+                        <p><strong>Domicilio Social:</strong> Calle Principal, 123, 46001 Valencia, España</p>
+                        <p><strong>Teléfono:</strong> +34 666 123 456</p>
+                        <p><strong>Email:</strong> info@3duca.es</p>
+                        <p><strong>Registro Mercantil:</strong> Inscrita en el Registro Mercantil de Valencia, Tomo 1234, Folio 56, Hoja V-78910</p>
+                    </div>
+                </div>
+
+                <!-- Protección de Datos - RGPD -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🔒 Protección de Datos Personales (RGPD)</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>Responsable del Tratamiento</h3>
+                        <p>De conformidad con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo (RGPD) y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y garantía de los derechos digitales (LOPDGDD), le informamos:</p>
+                        
+                        <p><strong>Responsable:</strong> Academia de Robótica e Inteligencia Artificial S.L.</p>
+                        <p><strong>DPO (Delegado de Protección de Datos):</strong> dpo@3duca.es</p>
+                        
+                        <h3>Finalidad del Tratamiento</h3>
+                        <ul>
+                            <li>Gestión de inscripciones y matrícula de alumnos</li>
+                            <li>Prestación del servicio educativo extraescolar</li>
+                            <li>Comunicaciones comerciales y promocionales (con consentimiento previo)</li>
+                            <li>Gestión administrativa y contable</li>
+                            <li>Cumplimiento de obligaciones legales</li>
+                        </ul>
+
+                        <h3>Legitimación</h3>
+                        <p>El tratamiento de datos se basa en:</p>
+                        <ul>
+                            <li>Ejecución del contrato de prestación de servicios educativos</li>
+                            <li>Consentimiento expreso del interesado o representantes legales (menores de 14 años)</li>
+                            <li>Cumplimiento de obligaciones legales</li>
+                            <li>Interés legítimo del responsable</li>
+                        </ul>
+
+                        <h3>Datos de Menores</h3>
+                        <p>Los datos de menores de 14 años serán tratados únicamente con el consentimiento de los padres, tutores o representantes legales. Para menores entre 14 y 18 años, se requiere consentimiento del propio menor y conocimiento de los padres/tutores.</p>
+
+                        <h3>Derechos del Interesado</h3>
+                        <p>Puede ejercer los siguientes derechos dirigiéndose a dpo@3duca.es:</p>
+                        <ul>
+                            <li><strong>Acceso:</strong> Conocer qué datos personales tenemos</li>
+                            <li><strong>Rectificación:</strong> Corregir datos inexactos</li>
+                            <li><strong>Supresión:</strong> Solicitar eliminación de datos</li>
+                            <li><strong>Limitación:</strong> Restringir el tratamiento</li>
+                            <li><strong>Portabilidad:</strong> Recibir datos en formato estructurado</li>
+                            <li><strong>Oposición:</strong> Oponerse al tratamiento</li>
+                            <li><strong>Revocación del consentimiento:</strong> En cualquier momento</li>
+                        </ul>
+                        
+                        <p><strong>Reclamación:</strong> Tiene derecho a presentar reclamación ante la Agencia Española de Protección de Datos (www.aepd.es)</p>
+
+                        <h3>Conservación de Datos</h3>
+                        <p>Los datos se conservarán durante la prestación del servicio y posteriormente durante los plazos legales establecidos (mínimo 5 años por obligaciones fiscales y laborales).</p>
+
+                        <h3>Medidas de Seguridad</h3>
+                        <p>Hemos implementado medidas técnicas y organizativas apropiadas para garantizar la seguridad de sus datos personales, incluyendo encriptación SSL, control de accesos, copias de seguridad y formación del personal.</p>
+                    </div>
+                </div>
+
+                <!-- Normativa Educativa -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>📚 Normativa de Actividades Extraescolares</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>Marco Legal</h3>
+                        <p>Nuestra actividad como centro de actividades extraescolares se rige por:</p>
+                        <ul>
+                            <li><strong>Ley Orgánica 2/2006, de 3 de mayo, de Educación (LOE)</strong>, modificada por la Ley Orgánica 3/2020 (LOMLOE)</li>
+                            <li><strong>Real Decreto 1032/2023</strong> regulador de las actividades extraescolares</li>
+                            <li><strong>Normativa autonómica de la Comunidad Valenciana</strong> sobre actividades complementarias y extraescolares</li>
+                            <li><strong>Ley 26/2018, de 21 de diciembre, de la Generalitat, de derechos y garantías de la infancia y la adolescencia</strong></li>
+                        </ul>
+
+                        <h3>Seguro de Responsabilidad Civil</h3>
+                        <p>La entidad dispone de un seguro de responsabilidad civil con cobertura de 600.000€ que cubre posibles daños a los alumnos durante las actividades, conforme al Real Decreto 1032/2023.</p>
+                        <p><strong>Compañía aseguradora:</strong> [Nombre de la aseguradora]</p>
+                        <p><strong>Número de póliza:</strong> [Número]</p>
+
+                        <h3>Titulación del Personal Docente</h3>
+                        <p>Todo el personal docente cuenta con:</p>
+                        <ul>
+                            <li>Titulación universitaria en áreas STEM (Ingeniería, Informática, etc.)</li>
+                            <li>Certificado de delitos de naturaleza sexual (Art. 57.1 del Código Penal)</li>
+                            <li>Formación en primeros auxilios</li>
+                            <li>Formación continua en metodologías educativas innovadoras</li>
+                        </ul>
+
+                        <h3>Ratio Profesor-Alumno</h3>
+                        <p>Mantenemos una ratio máxima de 12 alumnos por profesor para garantizar la atención personalizada y la seguridad del alumnado.</p>
+
+                        <h3>Instalaciones</h3>
+                        <p>Nuestras instalaciones cumplen con:</p>
+                        <ul>
+                            <li>Normativa de accesibilidad y eliminación de barreras arquitectónicas</li>
+                            <li>Medidas de seguridad y prevención de riesgos laborales</li>
+                            <li>Plan de evacuación y emergencias</li>
+                            <li>Seguro de instalaciones y equipamiento</li>
+                        </ul>
+
+                        <h3>Derechos y Deberes de los Alumnos</h3>
+                        <p><strong>Derechos:</strong></p>
+                        <ul>
+                            <li>Educación de calidad adaptada a sus necesidades</li>
+                            <li>Respeto a su integridad física y dignidad personal</li>
+                            <li>Participación activa en las actividades</li>
+                            <li>Orientación educativa personalizada</li>
+                            <li>Protección de sus datos personales</li>
+                        </ul>
+                        
+                        <p><strong>Deberes:</strong></p>
+                        <ul>
+                            <li>Asistencia regular y puntual</li>
+                            <li>Respeto al profesorado y compañeros</li>
+                            <li>Cuidado del material y las instalaciones</li>
+                            <li>Cumplimiento de las normas de convivencia</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Condiciones de Uso -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>📝 Condiciones de Uso del Sitio Web</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>Propiedad Intelectual</h3>
+                        <p>Todos los contenidos de este sitio web (textos, imágenes, diseño, logos, software) son propiedad de Academia de Robótica e IA S.L. o de terceros que han autorizado su uso, y están protegidos por la Ley de Propiedad Intelectual.</p>
+                        <p>Queda prohibida la reproducción, distribución, comunicación pública o transformación de los contenidos sin autorización expresa.</p>
+
+                        <h3>Uso Aceptable</h3>
+                        <p>El usuario se compromete a:</p>
+                        <ul>
+                            <li>Usar el sitio web conforme a la ley y buenas costumbres</li>
+                            <li>No realizar actividades ilícitas o contrarias a la buena fe</li>
+                            <li>No introducir virus o código malicioso</li>
+                            <li>No vulnerar los derechos de otros usuarios</li>
+                        </ul>
+
+                        <h3>Exclusión de Garantías y Responsabilidad</h3>
+                        <p>No garantizamos la disponibilidad y continuidad permanente del sitio web. Nos esforzamos por mantener la información actualizada, pero no garantizamos la ausencia de errores.</p>
+
+                        <h3>Enlaces a Terceros</h3>
+                        <p>Este sitio puede contener enlaces a sitios web de terceros. No nos hacemos responsables del contenido, políticas de privacidad o prácticas de dichos sitios.</p>
+                    </div>
+                </div>
+
+                <!-- Política de Cookies -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🍪 Política de Cookies</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <h3>¿Qué son las cookies?</h3>
+                        <p>Las cookies son pequeños archivos que se almacenan en su dispositivo cuando visita nuestro sitio web. Nos permiten mejorar su experiencia de navegación.</p>
+
+                        <h3>Tipos de cookies que utilizamos</h3>
+                        <ul>
+                            <li><strong>Cookies técnicas (necesarias):</strong> Imprescindibles para el funcionamiento del sitio</li>
+                            <li><strong>Cookies de análisis:</strong> Para conocer cómo los usuarios interactúan con el sitio (Google Analytics)</li>
+                            <li><strong>Cookies de personalización:</strong> Para recordar sus preferencias</li>
+                        </ul>
+
+                        <h3>Gestión de Cookies</h3>
+                        <p>Puede configurar su navegador para rechazar cookies o recibir avisos antes de aceptarlas. Sin embargo, algunas funcionalidades del sitio podrían no funcionar correctamente.</p>
+                        
+                        <p><strong>Configuración en navegadores:</strong></p>
+                        <ul>
+                            <li>Chrome: Configuración → Privacidad y seguridad → Cookies</li>
+                            <li>Firefox: Opciones → Privacidad y seguridad</li>
+                            <li>Safari: Preferencias → Privacidad</li>
+                            <li>Edge: Configuración → Cookies y permisos del sitio</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Modificaciones -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>🔄 Modificaciones y Actualizaciones</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Nos reservamos el derecho a modificar el presente aviso legal y las políticas de privacidad en cualquier momento. Cualquier cambio será publicado en esta página con la fecha de última actualización.</p>
+                        <p><strong>Última actualización:</strong> 4 de febrero de 2026</p>
+                        <p>Le recomendamos revisar periódicamente estas condiciones para estar informado de posibles cambios.</p>
+                    </div>
+                </div>
+
+                <!-- Ley Aplicable -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>⚖️ Legislación Aplicable y Jurisdicción</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>El presente aviso legal se rige por la legislación española.</p>
+                        <p>Para la resolución de cualquier controversia, las partes se someten a los Juzgados y Tribunales de Valencia, renunciando expresamente a cualquier otro fuero que pudiera corresponderles.</p>
+                        <p>En caso de que alguna cláusula sea declarada nula, las demás cláusulas seguirán vigentes.</p>
+                    </div>
+                </div>
+
+                <!-- Contacto -->
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span>📧 Información de Contacto</span>
+                        <span class="accordion-icon">▼</span>
+                    </button>
+                    <div class="accordion-content">
+                        <p>Para cualquier consulta relacionada con el aviso legal, protección de datos o ejercicio de derechos, puede contactarnos:</p>
+                        <ul>
+                            <li><strong>Email general:</strong> info@3duca.es</li>
+                            <li><strong>Email DPO (Protección de Datos):</strong> dpo@3duca.es</li>
+                            <li><strong>Teléfono:</strong> +34 666 123 456</li>
+                            <li><strong>Dirección postal:</strong> Calle Principal, 123, 46001 Valencia, España</li>
+                            <li><strong>Horario de atención:</strong> Lunes a Viernes de 16:30 a 20:00h</li>
+                        </ul>
+                        <p>Responderemos a su solicitud en un plazo máximo de 30 días naturales desde la recepción.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal-footer-legal">
+                <button class="btn-cerrar-modal">Cerrar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Botón Flotante de WhatsApp -->
+    <a href="https://wa.me/34900123456" class="whatsapp-float" target="_blank" aria-label="Contactar por WhatsApp">
+        <svg viewBox="0 0 32 32" class="whatsapp-icon">
+            <path fill="currentColor"
+                d="M16 0c-8.837 0-16 7.163-16 16 0 2.825 0.737 5.607 2.137 8.048l-2.137 7.952 7.933-2.127c2.42 1.37 5.173 2.127 8.067 2.127 8.837 0 16-7.163 16-16s-7.163-16-16-16zM16 29.467c-2.482 0-4.908-0.646-7.07-1.87l-0.507-0.292-4.713 1.262 1.262-4.669-0.292-0.508c-1.207-2.100-1.847-4.507-1.847-6.957 0-7.51 6.11-13.62 13.62-13.62s13.62 6.11 13.62 13.62c0 7.51-6.11 13.62-13.62 13.62zM21.305 19.26c-0.346-0.174-2.049-1.007-2.366-1.123-0.316-0.117-0.547-0.174-0.776 0.174s-0.892 1.123-1.094 1.347c-0.201 0.227-0.402 0.255-0.748 0.081-0.346-0.174-1.461-0.539-2.785-1.722-1.030-0.919-1.726-2.054-1.929-2.401-0.201-0.346-0.021-0.533 0.152-0.705 0.156-0.155 0.346-0.402 0.518-0.603 0.174-0.201 0.231-0.346 0.346-0.574 0.117-0.227 0.058-0.427-0.028-0.603-0.087-0.174-0.776-1.87-1.063-2.565-0.280-0.672-0.56-0.58-0.776-0.591-0.201-0.010-0.431-0.012-0.661-0.012s-0.603 0.087-0.919 0.427c-0.316 0.346-1.206 1.179-1.206 2.873s1.235 3.333 1.409 3.561c0.174 0.227 2.433 3.713 5.894 5.204 0.824 0.354 1.467 0.566 1.97 0.724 0.827 0.263 1.58 0.226 2.175 0.137 0.664-0.099 2.049-0.835 2.335-1.642 0.288-0.807 0.288-1.501 0.201-1.642-0.086-0.145-0.316-0.231-0.662-0.405z" />
+        </svg>
+        <span class="whatsapp-text">¿Hablamos?</span>
+    </a>
+
+    <script src="js/3duca-scripts.js" defer></script>
+</body>
+
+</html>

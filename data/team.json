@@ -1,0 +1,65 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "name": "Dr. Alberto Martín",
+      "role": "Director Pedagógico",
+      "photo": "images/team/alberto.jpg",
+      "specialties": ["Robótica Educativa", "ROS2", "Inteligencia Artificial"],
+      "education": "Doctor en Ingeniería Robótica - UPV",
+      "experience": "15 años en educación tecnológica",
+      "bio": "Ingeniero en robótica con pasión por enseñar. Ha trabajado en proyectos de robótica industrial y educativa.",
+      "email": "alberto@academiarobotica.es"
+    },
+    {
+      "id": 2,
+      "name": "Laura Gómez",
+      "role": "Profesora de Programación",
+      "photo": "images/team/laura.jpg",
+      "specialties": ["Python", "Scratch", "Machine Learning"],
+      "education": "Ingeniera Informática - UPV",
+      "experience": "8 años enseñando programación a niños",
+      "bio": "Especialista en metodologías STEAM y aprendizaje basado en proyectos.",
+      "email": "laura@academiarobotica.es"
+    },
+    {
+      "id": 3,
+      "name": "David Ruiz",
+      "role": "Profesor de Robótica",
+      "photo": "images/team/david.jpg",
+      "specialties": ["Arduino", "LEGO Robotics", "Impresión 3D"],
+      "education": "Ingeniero Electrónico - UV",
+      "experience": "10 años en robótica educativa",
+      "bio": "Maker apasionado que ha ganado múltiples premios en competiciones de robótica.",
+      "email": "david@academiarobotica.es"
+    }
+  ],
+  "facilities": {
+    "classrooms": 4,
+    "capacity": 48,
+    "equipmentList": [
+      "30 ordenadores de última generación",
+      "20 kits LEGO WeDo 2.0",
+      "15 kits LEGO Mindstorms EV3",
+      "25 placas Arduino con sensores",
+      "5 impresoras 3D",
+      "10 Raspberry Pi",
+      "Equipamiento de realidad virtual",
+      "Zona maker con herramientas"
+    ],
+    "features": [
+      "Aulas climatizadas",
+      "WiFi de alta velocidad",
+      "Pizarras digitales interactivas",
+      "Zona de descanso para padres",
+      "Parking gratuito"
+    ]
+  },
+  "stats": {
+    "studentsEnrolled": 120,
+    "satisfactionRate": 98,
+    "projectsCompleted": 450,
+    "competitionsWon": 12,
+    "yearsExperience": 5
+  }
+}

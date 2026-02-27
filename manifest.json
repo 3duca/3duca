@@ -1,0 +1,43 @@
+{
+  "name": "Academia de Robótica e IA",
+  "short_name": "3DUCA",
+  "description": "Centro de actividad extraescolar especializado en robótica, programación e IA para niños y jóvenes de 6 a 17 años",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFF8F0",
+  "theme_color": "#0066FF",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "images/mascota.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "images/mascota.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "kids", "technology"],
+  "lang": "es-ES",
+  "dir": "ltr",
+  "shortcuts": [
+    {
+      "name": "Ver Programas",
+      "short_name": "Programas",
+      "description": "Ver programas de robótica por edades",
+      "url": "/#programas-robotica",
+      "icons": [{ "src": "images/mascota.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "Inscripciones",
+      "short_name": "Inscribirse",
+      "description": "Reservar clase gratuita",
+      "url": "/#inscripciones",
+      "icons": [{ "src": "images/mascota.png", "sizes": "192x192" }]
+    }
+  ]
+}

@@ -1,0 +1,196 @@
+[
+  {
+    "id": "pequenos-inventores",
+    "name": "Pequeños Inventores",
+    "slug": "programa-6-8",
+    "ageRange": "6-8 años",
+    "price": 70,
+    "currency": "EUR",
+    "duration": "1.5 horas/semana",
+    "maxStudents": 8,
+    "color": "#FF6B9D",
+    "icon": "🤖",
+    "description": "Introducción lúdica a la robótica y programación mediante bloques visuales y robots educativos.",
+    "objectives": [
+      "Desarrollar pensamiento lógico y resolución de problemas",
+      "Aprender conceptos básicos de programación con bloques",
+      "Construir y programar robots simples",
+      "Fomentar creatividad y trabajo en equipo"
+    ],
+    "technologies": [
+      {
+        "name": "Scratch Jr",
+        "type": "software",
+        "description": "Programación visual para los más pequeños"
+      },
+      {
+        "name": "LEGO WeDo 2.0",
+        "type": "hardware",
+        "description": "Kit de robótica educativa"
+      },
+      {
+        "name": "Bee-Bot",
+        "type": "hardware",
+        "description": "Robot de suelo programable"
+      }
+    ],
+    "projects": [
+      "Mi primer robot",
+      "Cuentos interactivos",
+      "Máquinas simples",
+      "Animales robóticos"
+    ],
+    "schedule": {
+      "weekday": ["Lunes 16:00-17:30", "Miércoles 16:00-17:30"],
+      "weekend": ["Sábado 10:00-11:30"]
+    }
+  },
+  {
+    "id": "exploradores-tecnologicos",
+    "name": "Exploradores Tecnológicos",
+    "slug": "programa-9-11",
+    "ageRange": "9-11 años",
+    "price": 80,
+    "currency": "EUR",
+    "duration": "2 horas/semana",
+    "maxStudents": 8,
+    "color": "#4ECDC4",
+    "icon": "🚀",
+    "description": "Programación con Python y robótica avanzada con LEGO Mindstorms.",
+    "objectives": [
+      "Aprender fundamentos de Python",
+      "Programar robots autónomos",
+      "Usar sensores y actuadores",
+      "Participar en competiciones de robótica"
+    ],
+    "technologies": [
+      {
+        "name": "Python",
+        "type": "software",
+        "description": "Lenguaje de programación real"
+      },
+      {
+        "name": "LEGO Mindstorms EV3",
+        "type": "hardware",
+        "description": "Robótica avanzada"
+      },
+      {
+        "name": "Scratch 3.0",
+        "type": "software",
+        "description": "Proyectos intermedios"
+      }
+    ],
+    "projects": [
+      "Robot seguidor de línea",
+      "Brazo robótico",
+      "Videojuegos en Python",
+      "Robot explorador"
+    ],
+    "schedule": {
+      "weekday": ["Martes 17:30-19:30", "Jueves 17:30-19:30"],
+      "weekend": ["Sábado 12:00-14:00"]
+    }
+  },
+  {
+    "id": "programadores-makers",
+    "name": "Programadores y Makers",
+    "slug": "programa-12-14",
+    "ageRange": "12-14 años",
+    "price": 90,
+    "currency": "EUR",
+    "duration": "2 horas/semana",
+    "maxStudents": 8,
+    "color": "#95E1D3",
+    "icon": "⚡",
+    "description": "Arduino, impresión 3D y primeros pasos en Machine Learning.",
+    "objectives": [
+      "Dominar Arduino y electrónica",
+      "Diseñar e imprimir piezas en 3D",
+      "Introducción a Machine Learning",
+      "Crear proyectos IoT"
+    ],
+    "technologies": [
+      {
+        "name": "Arduino",
+        "type": "hardware",
+        "description": "Microcontroladores y electrónica"
+      },
+      {
+        "name": "Python + ML",
+        "type": "software",
+        "description": "Machine Learning básico"
+      },
+      {
+        "name": "Fusion 360",
+        "type": "software",
+        "description": "Diseño 3D"
+      },
+      {
+        "name": "Impresora 3D",
+        "type": "hardware",
+        "description": "Fabricación de prototipos"
+      }
+    ],
+    "projects": [
+      "Sistema de riego inteligente",
+      "Estación meteorológica",
+      "Clasificador de imágenes con IA",
+      "Casa domótica"
+    ],
+    "schedule": {
+      "weekday": ["Lunes 17:30-19:30", "Miércoles 17:30-19:30"],
+      "weekend": ["Sábado 10:00-12:00"]
+    }
+  },
+  {
+    "id": "ingenieros-junior",
+    "name": "Ingenieros Junior",
+    "slug": "programa-15-17",
+    "ageRange": "15-17 años",
+    "price": 100,
+    "currency": "EUR",
+    "duration": "2.5 horas/semana",
+    "maxStudents": 6,
+    "color": "#F38181",
+    "icon": "🎓",
+    "description": "ROS2, Deep Learning y proyectos de nivel profesional.",
+    "objectives": [
+      "Programar robots con ROS2",
+      "Implementar redes neuronales",
+      "Visión por computador",
+      "Preparación para estudios universitarios"
+    ],
+    "technologies": [
+      {
+        "name": "ROS2",
+        "type": "software",
+        "description": "Robot Operating System"
+      },
+      {
+        "name": "TensorFlow/PyTorch",
+        "type": "software",
+        "description": "Deep Learning"
+      },
+      {
+        "name": "OpenCV",
+        "type": "software",
+        "description": "Computer Vision"
+      },
+      {
+        "name": "Raspberry Pi",
+        "type": "hardware",
+        "description": "Computación embebida"
+      }
+    ],
+    "projects": [
+      "Robot autónomo con ROS2",
+      "Sistema de reconocimiento facial",
+      "Drone programable",
+      "Asistente virtual con IA"
+    ],
+    "schedule": {
+      "weekday": ["Viernes 17:00-19:30"],
+      "weekend": ["Sábado 16:00-18:30"]
+    }
+  }
+]
