@@ -616,3 +616,14 @@ Breakpoints principales:
 ---
 
 **Desarrollado con ❤️ para formar a los innovadores del futuro**
+
+## 📞 Contacto y Más Información
+
+Para más información sobre 3DUCA y nuestros programas educativos, contacta con nosotros.
+
+[![Youtube](https://img.shields.io/badge/-YouTube-red?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@3DUCATechn)
+[![Twitter](https://img.shields.io/badge/-Twitter-1DA1F2?style=flat-square&logo=twitter&logoColor=white)](https://x.com/3DUCA_)
+[![Instagram](https://img.shields.io/badge/-Instagram-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/3duca_tech/tagged/)
+
+
+---
